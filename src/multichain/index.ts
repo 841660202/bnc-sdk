@@ -39,6 +39,7 @@ class MultiChain {
     this.transactions$ = this.onTransaction$.asObservable()
     this.errors$ = new Subject()
     this.Blocknative = Blocknative
+    // 这里使用了apiKey，是给Blocknative用的 （dappId: this.apiKey,）
     this.subscribe = subscribe.bind(this)
     this.unsubscribe = unsubscribe.bind(this)
   }

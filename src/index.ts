@@ -44,6 +44,7 @@ const DEFAULT_APP_NAME = 'unknown'
 const DEFAULT_APP_VERSION = 'unknown'
 const DEFAULT_SYSTEM = 'ethereum'
 
+// Blocknative sdk
 class SDK {
   protected _storageKey: string
   protected _connectionId: string | undefined
@@ -127,7 +128,9 @@ class SDK {
       isLocalStorageAvailable() && window.localStorage.getItem(storageKey)
 
     this._storageKey = storageKey
+    // 内部使用了dappId
     this._connectionId = storedConnectionId || undefined
+    // appkey
     this._dappId = dappId
     this._system = system
     this._networkId = networkId
@@ -184,10 +187,10 @@ class SDK {
   }
 
   static multichain(options: MultiChainOptions) {
-    return new MultiChain(options, this)
+    return new MultiChain(options, this) // this is Blocknative
   }
 }
-
+// 连接成功，检测dappId
 function onOpen(this: any, handler: (() => void) | undefined) {
   this._connected = true
 

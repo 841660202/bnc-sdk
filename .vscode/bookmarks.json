@@ -1,0 +1,44 @@
+{
+	"files": [
+		{
+			"path": "src/index.ts",
+			"bookmarks": [
+				{
+					"line": 114,
+					"column": 4,
+					"label": ""
+				},
+				{
+					"line": 188,
+					"column": 0,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "src/multichain/index.ts",
+			"bookmarks": [
+				{
+					"line": 38,
+					"column": 4,
+					"label": ""
+				},
+				{
+					"line": 42,
+					"column": 2,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "src/multichain/subscribe.ts",
+			"bookmarks": [
+				{
+					"line": 26,
+					"column": 4,
+					"label": "apiKey的使用"
+				}
+			]
+		}
+	]
+}

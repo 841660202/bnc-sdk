@@ -96,7 +96,7 @@ export function handleMessage(this: any, msg: { data: string }): void {
         throw new Error(reason)
       }
     }
-
+    // 检测apiKey无效
     if (reason.includes('not a valid API key')) {
       if (this._onerror) {
         this._onerror({ message: reason })
